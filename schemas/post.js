@@ -27,17 +27,24 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "hoverTitle",
+      title: "HoverTitle",
+      type: "string",
+    },
+   
+    {
+      name: "searchQueries",
+      title: "SearchQueries",
+      type: "text",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "excerpt",
       title: "Excerpt",
       type: "string",
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: "searchQuery",
-      title: "SearchQuery",
-      type: "text",
-      validation: (Rule) => Rule.required(),
-    },
+
     {
       name: "author",
       title: "Author",
@@ -70,6 +77,11 @@ export default {
       validation: (Rule) => Rule.required(),
 
       initialValue: new Date().toISOString(),
+    },
+    {
+      title: "file",
+      name: "file",
+      type: "file",
     },
     {
       name: "body",
